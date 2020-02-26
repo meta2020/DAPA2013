@@ -1,0 +1,89 @@
+1.HbA1c
+> metareg(~week+drug,x=h, method.tau="REML")
+
+Mixed-Effects Model (k = 14; tau^2 estimator: REML)
+
+tau^2 (estimated amount of residual heterogeneity):     0.0125 (SE = 0.0113)
+tau (square root of estimated tau^2 value):             0.1117
+I^2 (residual heterogeneity / unaccounted variability): 56.74%
+H^2 (unaccounted variability / sampling variability):   2.31
+R^2 (amount of heterogeneity accounted for):            0.00%
+
+Test for Residual Heterogeneity: 
+QE(df = 8) = 18.7539, p-val = 0.0162
+
+Test of Moderators (coefficient(s) 2,3,4,5,6): 
+QM(df = 5) = 2.9328, p-val = 0.7103
+
+Model Results:
+
+           estimate      se     zval    pval    ci.lb    ci.ub     
+intrcpt     -0.6932  0.1463  -4.7373  <.0001  -0.9800  -0.4064  ***
+week         0.0001  0.0014   0.0949  0.9244  -0.0026   0.0029     
+drugINS      0.1570  0.1659   0.9464  0.3439  -0.1681   0.4820     
+drugMET      0.2190  0.1592   1.3757  0.1689  -0.0930   0.5310     
+drugMET&S    0.2000  0.1947   1.0270  0.3044  -0.1817   0.5817     
+drugPIO      0.0765  0.1812   0.4221  0.6729  -0.2786   0.4315     
+
+---
+Signif. codes:  0 ．***・ 0.001 ．**・ 0.01 ．*・ 0.05 ．.・ 0.1 ． ・ 1 
+---------------------------------------------------------------------
+2. Body weight
+> metareg(~week+drug,x=b, method.tau="REML")
+
+Mixed-Effects Model (k = 14; tau^2 estimator: REML)
+
+tau^2 (estimated amount of residual heterogeneity):     0 (SE = 0.0867)
+tau (square root of estimated tau^2 value):             0
+I^2 (residual heterogeneity / unaccounted variability): 0.00%
+H^2 (unaccounted variability / sampling variability):   1.00
+R^2 (amount of heterogeneity accounted for):            100.00%
+
+Test for Residual Heterogeneity: 
+QE(df = 8) = 1.9559, p-val = 0.9823
+
+Test of Moderators (coefficient(s) 2,3,4,5,6): 
+QM(df = 5) = 12.7707, p-val = 0.0256
+
+Model Results:
+
+          estimate      se     zval    pval    ci.lb    ci.ub     
+intrcpt    -1.2519  0.3339  -3.7494  0.0002  -1.9063  -0.5975  ***
+week       -0.0120  0.0045  -2.6467  0.0081  -0.0209  -0.0031   **
+drugINS    -0.6130  0.3751  -1.6343  0.1022  -1.3482   0.1222     
+drugMET    -0.4452  0.3694  -1.2054  0.2281  -1.1691   0.2787     
+drugMET&   -0.3400  0.4007  -0.8484  0.3962  -1.1254   0.4454     
+drugPIO    -0.3200  0.4513  -0.7091  0.4783  -1.2044   0.5645     
+
+---
+Signif. codes:  0 ．***・ 0.001 ．**・ 0.01 ．*・ 0.05 ．.・ 0.1 ． ・ 1 
+------------------------------------------------------------------------
+3. FPG
+> metareg(~week+drug,x=f, method.tau="REML")
+
+Mixed-Effects Model (k = 12; tau^2 estimator: REML)
+
+tau^2 (estimated amount of residual heterogeneity):     0.0062 (SE = 0.0385)
+tau (square root of estimated tau^2 value):             0.0788
+I^2 (residual heterogeneity / unaccounted variability): 8.80%
+H^2 (unaccounted variability / sampling variability):   1.10
+R^2 (amount of heterogeneity accounted for):            90.65%
+
+Test for Residual Heterogeneity: 
+QE(df = 6) = 5.7280, p-val = 0.4543
+
+Test of Moderators (coefficient(s) 2,3,4,5,6): 
+QM(df = 5) = 16.1816, p-val = 0.0063
+
+Model Results:
+
+           estimate      se     zval    pval    ci.lb    ci.ub     
+intrcpt     -1.6213  0.2205  -7.3531  <.0001  -2.0534  -1.1891  ***
+week         0.0063  0.0024   2.5796  0.0099   0.0015   0.0111   **
+drugINS      0.3795  0.2747   1.3816  0.1671  -0.1589   0.9180     
+drugMET      0.1845  0.2574   0.7167  0.4736  -0.3200   0.6890     
+drugMET&S   -0.0800  0.2925  -0.2735  0.7845  -0.6533   0.4933     
+drugPIO      0.1698  0.2799   0.6065  0.5442  -0.3789   0.7185     
+
+---
+Signif. codes:  0 ．***・ 0.001 ．**・ 0.01 ．*・ 0.05 ．.・ 0.1 ． ・ 1 

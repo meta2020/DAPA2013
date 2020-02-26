@@ -1,0 +1,53 @@
+> summary(h)
+Review:     HbA1c (%)
+Number of studies combined: k=14
+
+                          MD             95%-CI       z  p.value
+Random effects model -0.5211 [-0.5954; -0.4469] -13.755 < 0.0001
+
+Quantifying heterogeneity:
+tau^2 = 0.0104; H = 1.51 [1.12; 2.03]; I^2 = 56% [19.9%; 75.8%]
+
+Test of heterogeneity:
+     Q d.f.  p.value
+ 29.54   13   0.0055
+
+Details on meta-analytical method:
+- Inverse variance method
+- restricted maximum-likelihood estimator for tau^2
+-----------------------------------------------------------------------
+> summary(b)
+Review:     Body weight (kg)
+Number of studies combined: k=14
+
+                          MD             95%-CI        z  p.value
+Random effects model -2.0802 [-2.2811; -1.8793] -20.2912 < 0.0001
+
+Quantifying heterogeneity:
+tau^2 < 0.0001; H = 1.06 [1; 1.42]; I^2 = 11.7% [0%; 50.2%]
+
+Test of heterogeneity:
+     Q d.f.  p.value
+ 14.73   13   0.3247
+
+Details on meta-analytical method:
+- Inverse variance method
+- restricted maximum-likelihood estimator for tau^2
+---------------------------------------------------------------------
+> summary(f)
+Review:     FPG (mmol/l)
+Number of studies combined: k=12
+
+                          MD             95%-CI        z  p.value
+Random effects model -1.1314 [-1.3331; -0.9297] -10.9941 < 0.0001
+
+Quantifying heterogeneity:
+tau^2 = 0.0664; H = 1.47 [1.06; 2.04]; I^2 = 53.8% [11.3%; 76%]
+
+Test of heterogeneity:
+     Q d.f.  p.value
+ 23.81   11   0.0135
+
+Details on meta-analytical method:
+- Inverse variance method
+- restricted maximum-likelihood estimator for tau^2

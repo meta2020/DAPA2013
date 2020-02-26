@@ -1,0 +1,40 @@
+Egger test:
+1.HBA1C
+> metabias(h, k.min=1) ;
+Review:     Forest Plot of HbA1c meta analysis
+
+	Linear regression test of funnel plot asymmetry
+
+data:  h
+t = -1.898, df = 12, p-value = 0.082
+alternative hypothesis: asymmetry in funnel plot
+sample estimates:
+      bias    se.bias      slope 
+-2.8318116  1.4919749 -0.2519341 
+------------------------------------------------------------
+2.BW
+> metabias(b, k.min=1) ;
+Review:     Forest Plot of HbA1c meta analysis
+
+	Linear regression test of funnel plot asymmetry
+
+data:  b
+t = -3.1053, df = 12, p-value = 0.0091
+alternative hypothesis: asymmetry in funnel plot
+sample estimates:
+      bias    se.bias      slope 
+-2.1477485  0.6916399 -1.2993301 
+------------------------------------------------------------
+3.FPG
+> metabias(f, k.min=1) ;
+Review:     Forest Plot of HbA1c meta analysis
+
+	Linear regression test of funnel plot asymmetry
+
+data:  f
+t = 1.5487, df = 10, p-value = 0.1525
+alternative hypothesis: asymmetry in funnel plot
+sample estimates:
+     bias   se.bias     slope 
+ 2.614089  1.687913 -1.756876 
+
